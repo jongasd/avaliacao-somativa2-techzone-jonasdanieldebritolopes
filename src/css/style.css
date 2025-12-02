@@ -1,0 +1,101 @@
+:root {
+  --azul_escuro: #1c1f8a;
+  --azul_claro: #262dff;
+  --cinza: #adadad;
+  --branco: #ffffff;
+  --laranja_escuro: #f28d22;
+  --laranja_claro: #ffcd4d;
+  --fonte: "Poppins", sans-serif;
+  --margin_bottom: 1rem;
+  --border_radius: 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--fonte);
+  background-color: var(--cinza);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--border_radius);
+  transition: 0.2s;
+  color: var(--branco);
+  font-weight: 600;
+  background-color: var(-- cinza);
+  font-size: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, var(--azul_escuro), var(--azul_claro));
+  padding: 20px;
+  height: 200px;
+}
+
+#logo {
+  border-radius: 30px;
+  height: 120px;
+  max-width: 100%;
+}
+
+#destaque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: var(--branco);
+}
+#title-h2 {
+  font-size: 60px;
+}
+#produtos {
+  display: grid;
+  gap: 10px;
+  padding-left: 100px;
+  grid-template-columns: repeat(3, minmax(150px, 2fr));
+}
+.card {
+  border: black solid 4px;
+  display: flex;
+  background-color: var(--laranja_escuro);
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.card h3 {
+  font-size: 30px;
+}
+.card p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+img {
+  height: 200px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 10px solid;
+  border-color: rgb(255, 255, 255);
+}
+footer{
+  display: flex;
+  padding: 25px;
+  border-top: 50px;
+  justify-content: center;
+  background-color: var(--laranja_claro);
+  align-items: center;
+}
